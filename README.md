@@ -23,8 +23,16 @@ What Is a Regex? Regular expression -> Regex is a sequence of characters that de
 ## Regex Components
 
 ### Anchors
+Anchors belong to the family of regex tokens that don't match any characters, but that assert something about the string or the matching process. Anchors assert that the engine's current position in the string matches a well-determined location: for instance, the beginning of the string, or the end of a line.
+
+#### Example code
+/^\d\d:\d\d$/.test('12:05')
 
 ### Quantifiers
+Quantifiers match a number of instances of a character, group, or character class in a string.
+
+#### Example code
+/\d{4}/ matches a four-digit number. It is the same as /\d\d\d\d/
 
 ### OR Operator
 
